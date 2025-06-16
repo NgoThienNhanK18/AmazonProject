@@ -1,5 +1,5 @@
-import { SidebarProvider } from '@/components/ui/sidebar';
 import __helpers from '@/helpers';
+import { Header } from './header';
 
 export default function DashboardLayout({
   children
@@ -7,10 +7,9 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex h-full min-h-screen  ">
-      <SidebarProvider defaultOpen={true}>
-        <main className="w-full">{children}</main>
-      </SidebarProvider>
+    <div className="h-full min-h-screen  ">
+      <Header />
+      <main className="w-full">{children}</main>
     </div>
   );
 }
