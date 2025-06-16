@@ -39,6 +39,14 @@ export function Header() {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [filteredSuggestions, setFilteredSuggestions] = useState<string[]>([]);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [listProductLocalStorage, setListProductLocalStorage] = useState([]);
+
+  useEffect(() => {
+    const storedProducts = window.localStorage.getItem('listProductAdded');
+    if (storedProducts) {
+      setListProductLocalStorage(JSON.parse(storedProducts));
+    }
+  }, []);
 
   useEffect(() => {
     if (searchTerm.trim() === '') {
@@ -192,7 +200,7 @@ export function Header() {
               <ShoppingCart className="h-6 w-6" />
               <span className="font-bold">Cart</span>
               <span className="rounded-full bg-orange-400 px-2 py-1 text-xs text-black">
-                {window.localStorage.getItem('total') || 0}
+                {listProductLocalStorage.length || 0}
               </span>
             </div>
 
