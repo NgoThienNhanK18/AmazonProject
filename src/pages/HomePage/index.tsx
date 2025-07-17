@@ -9,7 +9,7 @@ export default function HomePage() {
       <main>
         <HeroBanner />
         <CategoryGrid />
-        <ProductCarousel title="Best Sellers" />
+        <ProductCarousel title="Sản phẩm bán chạy" />
         <DealsSection />
         <ProductCarousel title="Recommended for You" />
         <ProductCarousel title="Recently Viewed" />

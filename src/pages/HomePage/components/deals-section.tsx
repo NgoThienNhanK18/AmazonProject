@@ -12,16 +12,16 @@ export function DealsSection() {
             <CardHeader>
               <CardTitle className="flex items-center space-x-2">
                 <Clock className="h-5 w-5 text-orange-500" />
-                <span>Lightning Deals</span>
+                <span>Deal mới hôm nay</span>
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <img
-                    src="/placeholder.svg?height=60&width=60"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmmFgY_e-pwSeA5zA9q9V34Y3H4Z3PmtI9ww&s"
                     alt="Deal"
-                    className="rounded"
+                    className="h-28 w-28 rounded"
                   />
                   <div>
                     <p className="text-sm font-medium">Wireless Earbuds</p>
@@ -31,9 +31,9 @@ export function DealsSection() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <img
-                    src="/placeholder.svg?height=60&width=60"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYiYVCgqpd6iBtBNwD_TNcX8kmnPgpPM4Nhw&s"
                     alt="Deal"
-                    className="rounded"
+                    className="h-28 w-28 rounded"
                   />
                   <div>
                     <p className="text-sm font-medium">Smart Home Hub</p>
@@ -51,30 +51,30 @@ export function DealsSection() {
           {/* Today's Deals */}
           <Card>
             <CardHeader>
-              <CardTitle>Today's Deals</CardTitle>
+              <CardTitle>Tổng deals mới</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <img
-                    src="/placeholder.svg?height=60&width=60"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxNkwlOJBRXTwcLk1efIFaDk71le5uz06jcg&s"
                     alt="Deal"
-                    className="rounded"
+                    className="h-28 w-28 rounded"
                   />
                   <div>
                     <p className="text-sm font-medium">Kitchen Appliances</p>
-                    <p className="text-sm text-green-600">Up to 40% off</p>
+                    <p className="text-sm text-green-600">Giảm giá tới 40%</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <img
-                    src="/placeholder.svg?height=60&width=60"
+                    src="https://media.dolenglish.vn/PUBLIC/MEDIA/7190e664-5a07-462f-9a6a-5d09f7febbf4.jpg"
                     alt="Deal"
-                    className="rounded"
+                    className="h-28 w-28 rounded"
                   />
                   <div>
                     <p className="text-sm font-medium">Fashion Accessories</p>
-                    <p className="text-sm text-green-600">Up to 60% off</p>
+                    <p className="text-sm text-green-600">Giảm giá tới 60%</p>
                   </div>
                 </div>
               </div>

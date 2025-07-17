@@ -1,64 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
-
-const products = [
-  {
-    id: 1,
-    name: 'Wireless Bluetooth Headphones',
-    price: 79.99,
-    originalPrice: 129.99,
-    rating: 4.5,
-    reviews: 1234,
-    image:
-      'https://i0.wp.com/plopdo.com/wp-content/uploads/2021/11/feature-pic.jpg?fit=537%2C322&ssl=1',
-    badge: 'Best Seller'
-  },
-  {
-    id: 2,
-    name: 'Smart Watch Series 8',
-    price: 299.99,
-    originalPrice: 399.99,
-    rating: 4.7,
-    reviews: 856,
-    image:
-      'https://i0.wp.com/plopdo.com/wp-content/uploads/2021/11/feature-pic.jpg?fit=537%2C322&ssl=1',
-    badge: 'Deal of the Day'
-  },
-  {
-    id: 3,
-    name: 'Portable Phone Charger',
-    price: 24.99,
-    originalPrice: 39.99,
-    rating: 4.3,
-    reviews: 2341,
-    image:
-      'https://i0.wp.com/plopdo.com/wp-content/uploads/2021/11/feature-pic.jpg?fit=537%2C322&ssl=1',
-    badge: 'Lightning Deal'
-  },
-  {
-    id: 4,
-    name: 'Wireless Mouse',
-    price: 19.99,
-    originalPrice: 29.99,
-    rating: 4.4,
-    reviews: 567,
-    image:
-      'https://i0.wp.com/plopdo.com/wp-content/uploads/2021/11/feature-pic.jpg?fit=537%2C322&ssl=1',
-    badge: 'Choice'
-  },
-  {
-    id: 5,
-    name: 'USB-C Hub',
-    price: 49.99,
-    originalPrice: 79.99,
-    rating: 4.6,
-    reviews: 432,
-    image:
-      'https://i0.wp.com/plopdo.com/wp-content/uploads/2021/11/feature-pic.jpg?fit=537%2C322&ssl=1',
-    badge: 'New'
-  }
-];
+import { bestSeller } from '@/constants/mockData/bestSeller';
 
 export function ProductCarousel({ title }: { title: string }) {
   return (
@@ -76,7 +19,7 @@ export function ProductCarousel({ title }: { title: string }) {
       </div>
 
       <div className="grid grid-cols-1 gap-4 overflow-x-auto md:grid-cols-5">
-        {products.map((product) => (
+        {bestSeller.map((product) => (
           <Card
             key={product.id}
             className="min-w-[200px] cursor-pointer transition-shadow hover:shadow-lg"

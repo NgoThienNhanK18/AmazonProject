@@ -275,7 +275,7 @@ export function Header() {
             </SheetContent>
           </Sheet>
           <span className="cursor-pointer hover:text-gray-300">
-            Today's Deals
+            Tổng deals mới
           </span>
           <span className="cursor-pointer hover:text-gray-300">
             Customer Service

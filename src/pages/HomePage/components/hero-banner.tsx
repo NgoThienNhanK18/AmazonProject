@@ -6,32 +6,9 @@ import {
   CarouselNext,
   CarouselPrevious
 } from '@/components/ui/carousel';
+import { bannerItems } from '@/constants/mockData/banner';
 
 export function HeroBanner() {
-  const bannerItems = [
-    {
-      title: 'Holiday Deals',
-      description: 'Save up to 70% on top brands and products',
-      imageUrl:
-        'https://i0.wp.com/plopdo.com/wp-content/uploads/2021/11/feature-pic.jpg?fit=537%2C322&ssl=1',
-      altText: 'Holiday deals'
-    },
-    {
-      title: 'New Arrivals',
-      description: 'Check out the latest products in our store',
-      imageUrl:
-        'https://i0.wp.com/plopdo.com/wp-content/uploads/2021/11/feature-pic.jpg?fit=537%2C322&ssl=1',
-      altText: 'New arrivals'
-    },
-    {
-      title: 'Limited Time Offers',
-      description: 'Special discounts available for a short time only',
-      imageUrl:
-        'https://i0.wp.com/plopdo.com/wp-content/uploads/2021/11/feature-pic.jpg?fit=537%2C322&ssl=1',
-      altText: 'Limited offers'
-    }
-  ];
-
   return (
     <div className="relative">
       <Carousel className="w-full">
@@ -48,7 +25,7 @@ export function HeroBanner() {
                         size="lg"
                         className="bg-orange-400 font-bold text-black hover:bg-orange-500"
                       >
-                        Shop Now
+                        Mua ngay
                       </Button>
                     </div>
                     <div className="relative">
