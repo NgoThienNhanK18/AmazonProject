@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import ProductList from './ProductList';
 
-export default function ProductsPage({ listProductsShow }) {
+export default function ProductsPage() {
   // const [selectedCategory, setSelectedCategory] = useState('all');
-  const [listProducts, setListProducts] = useState(listProductsShow);
+  // const [listProducts] = useState(listProductsShow);
 
   // useEffect(() => {
   //   if (selectedCategory == 'all') {
@@ -23,7 +23,7 @@ export default function ProductsPage({ listProductsShow }) {
           setSelectedCategory(value);
         }}
       /> */}
-      <ProductList data={listProducts} />
+      {/* <ProductList data={listProducts} /> */}
     </div>
   );
 }

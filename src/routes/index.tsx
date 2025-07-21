@@ -1,5 +1,4 @@
 import NotFound from '@/pages/not-found';
-import path from 'path';
 import { Suspense, lazy } from 'react';
 import { Navigate, Outlet, useRoutes } from 'react-router-dom';
 // import ProtectedRoute from './ProtectedRoute';

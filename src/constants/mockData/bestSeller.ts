@@ -53,5 +53,39 @@ export const bestSeller = [
     image:
       'https://lucas.vn/wp-content/uploads/2024/03/Hub_-Cong-Chuyen-USB-C-HyperDrive-Next-4in1-5.png',
     badge: 'New'
+  },
+  // Thêm sản phẩm mới có hình đẹp
+  {
+    id: 6,
+    name: 'Bluetooth Speaker',
+    price: 59.99,
+    originalPrice: 89.99,
+    rating: 4.8,
+    reviews: 1021,
+    image:
+      'https://cdn.tgdd.vn/Products/Images/2162/238877/loa-bluetooth-sony-srs-xb13-ava-600x600.jpg',
+    badge: 'Hot'
+  },
+  {
+    id: 7,
+    name: 'Gaming Keyboard',
+    price: 89.99,
+    originalPrice: 129.99,
+    rating: 4.7,
+    reviews: 789,
+    image:
+      'https://philong.com.vn/media/product/250-31490-ban-phim-co-gaming-akko-3087-v2-multi-modes-prunus-lannesiana-5078_1.jpg',
+    badge: 'Best Seller'
+  },
+  {
+    id: 8,
+    name: '4K Action Camera',
+    price: 129.99,
+    originalPrice: 199.99,
+    rating: 4.5,
+    reviews: 654,
+    image:
+      'https://cdn.tgdd.vn/Products/Images/4727/238877/camera-hanh-trinh-4k-ava-600x600.jpg',
+    badge: 'New'
   }
 ];
